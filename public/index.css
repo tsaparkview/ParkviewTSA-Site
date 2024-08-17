@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body, html {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: white;
+}
+
+#hero {
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('./images/conferences/state/state2.jpg') no-repeat center center / cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+div#header{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.h1-text {
+  font-size: 5rem;
+  font-family: Poppins;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.mini-msg {
+  font-size: 1.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffbb00;
+  font-weight: 800;
+}
+
+
+
+.text {
+  padding-top: 3rem;
+}
+
+
+.add-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem; 
+  background-color: #ffffff;
+}
+
+.box {
+  width: 30rem; 
+  height: 30rem; 
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 0; 
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.box:hover {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  cursor: default;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.6;
+  z-index: -1; /* Make sure the background image is behind the content */
+}
+
+#stem-academy {
+  background: url('./images/stem-academy/sa2.JPG') no-repeat center center / cover;
+  background-size: cover;
+}
+
+#vex-robotics {
+  background: url('./images/logos/vexlogo.png') no-repeat center center / cover;
+  background-size: cover;
+}
+
+.box-content {
+  background: rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  padding: 20px; 
+  position: absolute;
+  bottom: 0; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.box h2 {
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.box p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* CAROUSEL CSS */
+
+.carousel-item img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+  
+}
+
+
+.slides-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Poppins;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+
+
+
+.bstrap {
+  margin-left: 80.5px;
+  margin-right: 80.5px;
+  padding: 48px 24px;
+}
+
+
+
+
+/* Student Square Instruction Grid */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25rem 25rem 25rem;
+  gap: 30px 40px;
+  max-width: fit-content;
+  padding-bottom: 5rem;
+}
+
+.student-square-title{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight:700;
+  padding-bottom:3rem;
+  color: black;
+  padding-top: 3rem;
+}
+
+.grid-section {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item img{
+  width: 25rem;
+  height: auto;
+}
+
+.grid-item{
+  width: fit-content;
+}
+
+
+
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .h1-text {
+      width: 40rem;
+      padding-top: 3rem;
+      font-size: 4rem;
+    }
+    .button {
+      width: 200px;
+      height: 50px;
+      font-size: 18px;
+    }
+    .grid-container{
+      grid-template-columns: 15rem 15rem;
+    }
+    .grid-item img{
+      width:15rem;
+    }
+}
+
+@media (max-width: 1350px) {
+  .grid-container{
+    grid-template-columns: 15rem 15rem 15rem;
+  }
+  .grid-item img{
+    width:15rem;
+  }
+}
+
+@media (max-width: 768px) {
+    .h1-text {
+      font-size: 3rem;
+      padding-top: 5rem;
+    }
+    .button {
+      width: 100px;
+      height: 40px;
+      font-size: 16px;
+    }
+    .grid-container{
+      grid-template-columns: 15rem 15rem;
+    }
+    
+    
+}
+
+
+
+@media (max-width: 480px)
+{
+  .h1-text{
+    padding-bottom: 2rem;
+    width: auto;
+    font-size: 2rem;
+  }
+  .carousel-item img{
+    height: 300px;
+    width: 400px;
+  }
+  .box p{
+    font-size: 12px;
+  }
+  .grid-container{
+    grid-template-columns: 15rem;
+  }
+  
+}
+
+@media (max-height: 768px){
+  .h1-text{
+      font-size: 3.5rem;
+      padding-bottom: 1.5rem;
+  }
+  .short-desc{
+      margin-top: 1rem;
+      top: 80%;
+  }
+  div#header{
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+  }
+  .hero-content{
+      top: 60%;
+  }
+  #hero {
+    min-height: 80vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCROLLBAR CSS */
+/* SCROLLBAR CSS */
+

@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: white;
+}
+
+#hero {
+  width: 100%;
+  min-height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('./images/conferences/state/state2.jpg') no-repeat center center / cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+div#header{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.h1-text {
+  font-size: 5rem;
+  font-family: Poppins;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.mini-msg {
+  font-size: 1.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffbb00;
+  font-weight: 500;
+}
+
+.text {
+  padding-top: 3rem;
+}
+
+.bstrap {
+  margin-left: 80.5px;
+  margin-right: 80.5px;
+  padding: 48px 24px;
+}
+
+.carousel-item img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+
+.slides-title {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+/* CONTACT FORM CSS */
+/* CONTACT FORM CSS */
+/* CONTACT FORM CSS */
+/* CONTACT FORM CSS */
+
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=text]:hover, input[type=email]:hover, textarea:hover {
+  border: 1px solid #EE7B19;
+}
+
+input[type=submit] {
+  background-color: #EE7B19;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #fff;
+  color:#EE7B19;
+  border: 2px solid #a55712;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.column img {
+  border-radius:7px;
+  margin-top: 10px;
+  height: 30.65rem;
+  object-fit: cover;
+}
+
+label {
+  display: block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.input-box {
+  border-radius: 7px;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .h1-text {
+      width: 40rem;
+      padding-top: 3rem;
+      font-size: 4rem;
+    }
+    .button {
+      width: 200px;
+      height: 50px;
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .h1-text {
+      font-size: 3rem;
+      padding-top: 5rem;
+    }
+    .button {
+      width: 100px;
+      height: 40px;
+      font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 480px)
+{
+  .h1-text{
+    padding-bottom: 2rem;
+    width: auto;
+    font-size: 2rem;
+  }
+  
+}
+
+@media (max-height: 768px){
+  .h1-text{
+      padding-bottom: 1.5rem;
+  }
+  div#header{
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+  }
+  .hero-content{
+      top: 60%;
+  }
+  #hero {
+    min-height: 80vh;
+  }
+}

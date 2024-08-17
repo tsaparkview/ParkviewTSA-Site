@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+section#hero {
+  min-height: 60vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/officers/24-25officers4.JPG') no-repeat center center / cover;
+  padding: 4rem 1rem;
+}
+
+.h1-text {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.short-desc {
+  font-size: 1.25rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  color: #ddd;
+}
+
+.bstrap {
+  margin-left: 80.5px; 
+  margin-right: 80.5px; 
+  padding-top: 48px; 
+  padding-bottom: 48px; 
+  padding-left: 24px; 
+  padding-right: 24px;
+}
+
+.event-title {
+  font-weight: 600;
+}
+
+.btn-tsaweb{
+  background-color:#EE7B19;
+}
+
+.btn-tsaweb:hover{
+  background-color:#da7217;
+}
+

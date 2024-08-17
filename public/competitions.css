@@ -56,3 +56,7 @@ section#hero {
   background-color:#da7217;
 }
 
+.lead {
+  max-width: 40rem;
+}
+

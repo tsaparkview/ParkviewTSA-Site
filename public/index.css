@@ -136,7 +136,7 @@ div#header{
 /* CAROUSEL CSS */
 
 .carousel-item img {
-  height: auto;
+  height: 600px;
   object-fit: cover;
   border-radius: 7px;
   
@@ -296,7 +296,11 @@ div#header{
 
 
 
-
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+}
 
 
 

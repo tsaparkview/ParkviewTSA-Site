@@ -307,16 +307,9 @@ div#header{
   p.lead.mb-4{
     font-size: 13px;
   }
+
+  .carousel-inner {
+    display: none;
+  }
 }
-
-
-.carousel-inner {
-  display: none;
-}
-
-
-
-
-/* SCROLLBAR CSS */
-/* SCROLLBAR CSS */
 

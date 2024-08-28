@@ -295,7 +295,6 @@ div#header{
 
 
 
-
 @media screen and (max-width: 768px) {
   .carousel-item img {
     height: 300px;
@@ -313,3 +312,10 @@ div#header{
   }
 }
 
+.googleslideshow{
+  display: flex;
+  justify-content: center;
+}
+.googleslideshow iframe{
+  display: flex;
+}

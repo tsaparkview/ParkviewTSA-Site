@@ -303,10 +303,16 @@ div#header{
 }
 
 
+@media screen and (max-width: 490px){
+  p.lead.mb-4{
+    font-size: 13px;
+  }
+}
 
 
-
-
+.carousel-inner {
+  display: none;
+}
 
 
 

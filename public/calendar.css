@@ -48,7 +48,7 @@ section#hero {
   display: block;
   margin: 0 auto; /* Center iframe horizontally */
   width: 75rem;
-  height: 50rem;
+  height: 60rem;
   padding: 1rem 0; /* Adjust padding for better spacing */
   border: 0;
   z-index: 1; /* Ensure iframe stays above the header */

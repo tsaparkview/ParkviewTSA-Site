@@ -60,19 +60,20 @@ section#hero {
   max-width: 40rem;
 }
 
-iframe {
+iframe, .td-img {
   width: 100%;
   height: 400px;
 }
 
 @media screen and (max-width: 780px) {
-  iframe {
+  iframe, .td-img {
     height: 300px;
+    width: 400px;
   }
 }
 
 @media screen and (max-width: 580px) {
-  iframe {
+  iframe, .td-img {
     height: 250px;
     width: 300px
   }

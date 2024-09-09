@@ -40,6 +40,8 @@ section#hero {
 
 .col {
   width: 300px;
+  display: flex;
+  justify-content: center;
 }
 
 .pics {

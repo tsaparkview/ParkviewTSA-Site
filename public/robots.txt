@@ -1,0 +1,8 @@
+# robots.txt for https://www.yourwebsite.com/
+
+User-agent: *
+Disallow: /private/
+Disallow: /temp/
+Allow: /
+
+Sitemap: https://www.yourwebsite.com/sitemap.xml

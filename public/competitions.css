@@ -73,6 +73,17 @@ iframe {
 
 @media screen and (max-width: 580px) {
   iframe {
-    height: 200px;
+    height: 250px;
+    width: 300px
+  }
+  p.lead {
+    font-size: 1rem;;
+  }
+  .h1-text{
+    font-size: 2.5rem;
+  }
+  .bstrap{
+    margin-left:auto;
+    margin-right: auto;
   }
 }

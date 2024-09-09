@@ -41,25 +41,25 @@ section#hero {
 
 .calendar h4.link {
   font-size: 1rem;
-  margin: 2rem 0; /* Add margin for spacing */
+  margin: 2rem 0; 
 }
 
 .calendar iframe {
   display: block;
-  margin: 0 auto; /* Center iframe horizontally */
-  width: 75rem;
-  height: 60rem;
-  padding: 1rem 0; /* Adjust padding for better spacing */
+  margin: 0 auto;
+  width: 90vw; /* Set width to 90% of the viewport width */
+  height: 60vh; /* Set height to 60% of the viewport height */
+  padding: 1rem 0;
   border: 0;
-  z-index: 1; /* Ensure iframe stays above the header */
+  z-index: 1;
 }
 
 /* Adjust layout for smaller screens */
 @media (max-width: 1105px) {
   section#hero {
-      flex-direction: column; /* Change to column layout */
-      justify-content: center; /* Center align vertically */
-      padding: 2rem; /* Add padding for better spacing */
+      flex-direction: column; 
+      justify-content: center; 
+      padding: 2rem; 
   }
 
   .h1-text, .short-desc {
@@ -91,8 +91,8 @@ section#hero {
 
 @media (max-width: 768px) {
   .calendar iframe {
-    width: 40rem;
-    height: 30rem;
+    width: 85vw;
+    height: 50vh;
   }
 
   .h1-text{

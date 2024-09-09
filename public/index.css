@@ -14,7 +14,7 @@ body, html {
 #hero {
   width: 100%;
   min-height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('./images/conferences/state/state2.jpg') no-repeat center center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('./images/conferences/state/state2.jpg') no-repeat center / cover;
   color: white;
   background-attachment: fixed;
 }
@@ -244,6 +244,7 @@ div#header{
     }
     .grid-container{
       grid-template-columns: 15rem 15rem;
+      gap: 10px 20px;
     }
     
     
@@ -266,7 +267,15 @@ div#header{
     font-size: 12px;
   }
   .grid-container{
-    grid-template-columns: 15rem;
+    grid-template-columns: 10rem 10rem;
+    gap: 20px;
+  }
+  .grid-item img{
+    width:11rem;
+  }
+  .grid-section{
+    align-items: center;
+    justify-content:center;
   }
   
 }
@@ -304,18 +313,42 @@ div#header{
 
 @media screen and (max-width: 490px){
   p.lead.mb-4{
-    font-size: 13px;
+    font-size: 12px;
   }
-
-  .carousel-inner {
-    display: none;
+  #hero{
+    max-height:50vh;
+  }
+  .carousel-item img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
   }
 }
 
 .googleslideshow{
-  display: flex;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  overflow: hidden;
 }
 .googleslideshow iframe{
-  display: flex;
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+@media screen and (max-width: 390px){
+  .h1-text{
+    font-size:2rem;
+    padding-top: 0px;
+  }
+  .hero-content{
+    padding-top: 0;
+  }
+  p.lead.mb-4{
+    font-size: 1rem;
+  }
 }

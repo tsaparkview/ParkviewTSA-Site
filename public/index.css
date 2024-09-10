@@ -49,13 +49,8 @@ div#header{
   font-weight: 800;
 }
 
-a:link {
-  color:#EE7B19;
-}
+/* must fix link colors */
 
-a:link:hover{
-  color:#aa570e;
-}
 
 .text {
   padding-top: 3rem;
@@ -166,7 +161,6 @@ a:link:hover{
   margin-right: 80.5px;
   padding: 48px 24px;
 }
-
 
 
 

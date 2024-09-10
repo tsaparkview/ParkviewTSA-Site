@@ -54,12 +54,12 @@ a:link:hover{
 
 .calendar iframe {
   display: block;
-  margin: 0 auto;
-  width: 90vw; /* Set width to 90% of the viewport width */
-  height: 60vh; /* Set height to 60% of the viewport height */
-  padding: 1rem 0;
+  margin: 0 auto; /* Center iframe horizontally */
+  width: 75rem;
+  height: 65rem;
+  padding: 1rem 0; /* Adjust padding for better spacing */
   border: 0;
-  z-index: 1;
+  z-index: 1; /* Ensure iframe stays above the header */
 }
 
 /* Adjust layout for smaller screens */

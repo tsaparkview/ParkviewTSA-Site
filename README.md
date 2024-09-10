@@ -4,7 +4,7 @@
 
 Welcome to the Parkview TSA website repository! This README provides an overview of the project, including setup instructions, design guidelines, and best practices for maintaining the website.
 
-## Project Overview
+## Overview
 
 The Parkview TSA website serves as a hub for information about the Parkview Technology Student Association (TSA). It includes various sections such as officer profiles, upcoming events, and club information.
 
@@ -32,12 +32,12 @@ To ensure fast loading times and better performance, follow these guidelines for
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/parkview-tsa-website.git
+   git clone https://github.com/tsaparkview/ParkviewTSA-Site.git
    ```
 
 2. **Navigate to the Project Directory:**
    ```bash
-   cd parkview-tsa-website
+   cd parkview-tsa-site
    ```
 
 3. **Install Dependencies:**
@@ -61,3 +61,5 @@ Keep commits clean and easy to read as multiple people will be working on it.
 ## Contact
 
 For any questions or issues, talk to Ms. Calvert or ParkviewTSA.
+
+# Lead Webmaster (2024-2025) - Gimmy Samson

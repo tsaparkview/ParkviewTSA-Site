@@ -155,7 +155,6 @@ div#header{
 
 
 
-
 .bstrap {
   margin-left: 80.5px;
   margin-right: 80.5px;
@@ -206,7 +205,6 @@ div#header{
 
 @media (max-width: 1024px) {
     .h1-text {
-      width: 40rem;
       padding-top: 3rem;
       font-size: 4rem;
     }
@@ -229,6 +227,10 @@ div#header{
   }
   .grid-item img{
     width:15rem;
+  }
+  .hero-content{
+    padding: 0;
+    margin: 0;
   }
 }
 

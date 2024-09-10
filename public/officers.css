@@ -44,14 +44,6 @@ section#hero {
   justify-content: center;
 }
 
-a:link {
-  color:#EE7B19;
-}
-
-a:link:hover{
-  color:#aa570e;
-}
-
 .pics {
   object-fit: cover;
   width: 100%;

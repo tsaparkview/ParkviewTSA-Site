@@ -11,13 +11,6 @@ body, html {
   background-color: #f8f9fa;
 }
 
-a:link {
-  color:#EE7B19;
-}
-
-a:link:hover{
-  color:#aa570e;
-}
 
 section#hero {
   min-height: 60vh;

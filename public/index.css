@@ -189,7 +189,7 @@ div#header{
 }
 
 .grid-item img{
-  width: 25rem;
+  width: 20rem;
   height: auto;
 }
 
@@ -231,6 +231,7 @@ div#header{
   .hero-content{
     padding: 0;
     margin: 0;
+    width: 100%;
   }
 }
 

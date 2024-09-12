@@ -35,7 +35,7 @@ div#header{
 
 
 .h1-text {
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: Poppins;
   font-weight: 700;
   color: white;
@@ -163,7 +163,9 @@ label {
 }
 
 
-
+@media (max-width: 1150px) {
+  
+}
 
 @media (max-width: 1024px) {
     .h1-text {

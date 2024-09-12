@@ -13,7 +13,7 @@ body, html {
 
 
 section#hero {
-  min-height: 60vh;
+  min-height: 70vh;
   color: white;
   display: flex;
   align-items: center;

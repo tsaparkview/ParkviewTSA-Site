@@ -13,7 +13,7 @@ body, html {
 }
 
 section#hero {
-  min-height: 60vh;
+  min-height: 70vh;
   color: white;
   background-attachment: fixed;
   display: flex;
@@ -23,7 +23,7 @@ section#hero {
 }
 
 .h1-text {
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: Poppins;
   font-weight: 700;
   color: white;
@@ -33,7 +33,7 @@ section#hero {
 
 .short-desc {
   max-width: 40rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 0 auto;
 }

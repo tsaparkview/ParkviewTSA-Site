@@ -10,7 +10,7 @@ body, html {
 }
 
 section#hero {
-  min-height: 60vh;
+  min-height: 70vh;
   color: white;
   background-attachment: fixed;
   display: flex;
@@ -62,7 +62,12 @@ section#hero {
       justify-content: center; 
       padding: 2rem; 
   }
-
+  .h1-text {
+    font-size: 2rem;
+  }
+  .short-desc{
+    font-size: 1rem;
+  }
   .h1-text, .short-desc {
       position: relative;
       left: 0;

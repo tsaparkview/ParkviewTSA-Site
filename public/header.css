@@ -31,6 +31,11 @@ nav .wrapper{
   width: 3.5rem
 }
 
+.desktop-item svg, .desktop-item i {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
 .wrapper .nav-links{
   display: inline-flex;
 }

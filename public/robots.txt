@@ -1,8 +1,6 @@
 # robots.txt for https://parkviewtsa.org/
 
 User-agent: *
-Disallow: /private/
-Disallow: /temp/
 Allow: /
 
 Sitemap: https://parkviewtsa.org/sitemap.xml

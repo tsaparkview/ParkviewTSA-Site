@@ -13,7 +13,7 @@ body, html {
 #hero {
   width: 100%;
   min-height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('./images/conferences/state/state2.jpg') no-repeat center center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)), url('./images/printshop/inside5.jpg') no-repeat center center / cover;
   color: white;
   background-attachment: fixed;
 }

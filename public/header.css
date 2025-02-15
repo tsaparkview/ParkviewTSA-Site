@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 nav{
   position: fixed;
   z-index: 99;
@@ -143,8 +144,15 @@ nav .wrapper{
   right: 30px;
   top: 10px;
 }
+.home-link {
+  display: none;
+}
+
 
 @media screen and (max-width: 970px) {
+  .home-link {
+    display: contents;
+  }
   .wrapper .btn{
     display: block;
   }
@@ -280,4 +288,95 @@ nav input{
 .body-text div{
   font-size: 45px;
   font-weight: 600;
+}
+
+/* LEGACY  */
+
+.legacy-nav {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #c46b1c;
+  z-index: -10;
+}
+
+.legacy-nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style-type: none;
+  margin: 0;
+}
+
+.legacy-nav a {
+  text-decoration: none;
+  color: #dbdbdb;
+  text-wrap: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.legacy-nav a:hover {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+/* LEGACY DROPDOWN */
+
+.legacy-dropdown {
+  display: none; 
+}
+
+.legacy-drop-btn {
+  background: #EE7B19; 
+  color: #f2f2f2;
+  padding: 9px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.legacy-drop-btn:hover {
+  background: #d46b1c; 
+}
+
+.legacy-drop-menu {
+  background: #10182B; 
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.legacy-drop-menu li a {
+  color: #f2f2f2;
+  padding: 4px 2px;
+  display: block;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.legacy-drop-menu li a:hover {
+  background: rgba(255, 255, 255, 0.1); 
+}
+
+#showLegacyDrop:checked ~ .legacy-drop-menu {
+  max-height: 500px; 
+}
+
+@media screen and (max-width: 730px) {
+  .legacy-dropdown {
+    display: block; 
+  }
+
+  .legacy-nav {
+    display: none; 
+  }
 }

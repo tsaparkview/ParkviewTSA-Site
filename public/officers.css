@@ -67,27 +67,27 @@ section#hero {
     position: relative;
     left: 0;
     top: 0;
-    transform: none; /* Reset transformation */
-    padding-top: 0; /* Remove unnecessary padding */
-    width: 100%; /* Make full-width on smaller screens */
+    transform: none; 
+    padding-top: 0; 
+    width: 100%;
   }
   
   .h1-text {
-    font-size: 3rem; /* Reduce font size on smaller screens */
+    font-size: 3rem; 
   }
   
   .short-desc {
-    font-size: 1.5rem; /* Reduce font size on smaller screens */
+    font-size: 1.5rem; 
   }
 }
 
 @media (max-width: 400px){
   .h1-text {
-    font-size: 2rem; /* Reduce font size even further on very small screens */
+    font-size: 2rem; 
   }
   
   .short-desc {
-    font-size: 1rem; /* Reduce font size even further on very small screens */
+    font-size: 1rem; 
   }
 }
 

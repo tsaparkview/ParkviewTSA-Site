@@ -20,7 +20,22 @@ section#hero {
   align-items: center;
   justify-content: space-evenly;
   background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)),
-    url("./images/officers/24-25officers4.JPG") no-repeat center center / cover;
+    url("../images/officers/24-25officers4.JPG") no-repeat center center / cover;
+  padding: 4rem 2rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  section#hero {
+    padding: 3rem 1.5rem;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  section#hero {
+    padding: 2rem 1rem;
+  }
 }
 
 .h1-text {

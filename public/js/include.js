@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const footer = document.getElementById("footer");
   
     // Include the header.html file
-    fetch("header.html")
+    fetch("./includes/header.html")
       .then(response => response.text())
       .then(html => {
         header.innerHTML = html;
       });
   
     // Include the footer.html file
-    fetch("footer.html")
+    fetch("./includes/footer.html")
       .then(response => response.text())
       .then(html => {
         footer.innerHTML = html;

@@ -18,8 +18,21 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/officers/24-25officers4.JPG') no-repeat center center / cover;
-    padding: 4rem 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/officers/24-25officers4.JPG') no-repeat center center / cover;
+    padding: 4rem 2rem;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    section#hero {
+      padding: 3rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    section#hero {
+      padding: 2rem 1rem;
+    }
   }
 
 .h1-text {

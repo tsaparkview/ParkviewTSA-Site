@@ -28,7 +28,7 @@
     <title>Parkview TSA | Technology Student Association</title>
     <link rel="preload" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.css" as="style">
     <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.css">
-    <link href="./index.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
@@ -73,16 +73,22 @@
 
     
     <section class="add-info">
-      <div class="box" id="stem-academy">
-          <h2>STEM Academy</h2>
-          <div class="box-content">
-              <p style="color: white; font-weight: 500;">STEM Academy is an after-school program that Parkview TSA hosts for students in grades 3-5 at <a href="https://campcreekes.gcpsk12.org/" style="color: #EE7B19;" target="_blank" rel="noopener noreferrer" alt="Camp Creek Elementary Website" title="Camp Creek">Camp Creek Elementary</a> to learn about the basics of engineering while creating daily projects. Members may volunteer for points and fun!</p>
+      <div class="info-card" id="stem-academy">
+          <div class="card-image-wrapper">
+              <div class="card-image" style="background-image: url('./images/stem-academy/sa2.JPG');"></div>
+          </div>
+          <div class="card-content">
+              <h2>STEM Academy</h2>
+              <p>STEM Academy is an after-school program that Parkview TSA hosts for students in grades 3-5 at <a href="https://campcreekes.gcpsk12.org/" target="_blank" rel="noopener noreferrer" alt="Camp Creek Elementary Website" title="Camp Creek">Camp Creek Elementary</a> to learn about the basics of engineering while creating daily projects. Members may volunteer for points and fun!</p>
           </div>
       </div>
-      <div class="box" id="vex-robotics">
-          <h2>VEX Robotics</h2>
-          <div class="box-content">
-              <p style="color: white; font-weight: 500;">VEX Robotics challenges students to build, program, and drive robots in an expansive competition that covers the entire school year. They work along side TSA and even compete in state and national events! </p>
+      <div class="info-card" id="vex-robotics">
+          <div class="card-image-wrapper">
+              <div class="card-image" style="background-image: url('./images/logos/vexlogo.png');"></div>
+          </div>
+          <div class="card-content">
+              <h2>VEX Robotics</h2>
+              <p>VEX Robotics challenges students to build, program, and drive robots in an expansive competition that covers the entire school year. They work along side TSA and even compete in state and national events!</p>
           </div>
       </div>
     </section>
@@ -432,8 +438,9 @@
         </ul>
         
     </footer>
-    <script src="./include.js"></script>
+    <script src="./js/include.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+

@@ -44,16 +44,45 @@ html {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  margin: 2rem 0;
+  margin: 3rem auto;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    margin: 1.5rem auto;
+    padding: 0 0.75rem;
+  }
 }
 
 .carousel-item img {
   height: 500px;
   object-fit: cover;
   width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item img {
+    height: 250px;
+  }
 }
 
 .carousel-control-prev,
@@ -101,12 +130,28 @@ html {
 /* Enhanced Hero Section */
 #hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./images/conferences/state/state2.jpg") no-repeat center center / cover;
+    url("../images/conferences/state/state2.jpg") no-repeat center center / cover;
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 4rem 2rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    min-height: 60vh;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    min-height: 50vh;
+    padding: 2rem 1rem;
+  }
 }
 
 .hero-content {
@@ -114,6 +159,9 @@ html {
   color: white;
   z-index: 2;
   position: relative;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 
 .h1-text {
@@ -121,6 +169,21 @@ html {
   font-weight: 700;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .h1-text {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1-text {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .mini-msg {
@@ -129,9 +192,28 @@ html {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 768px) {
+  .mini-msg {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mini-msg {
+    font-size: 0.9rem;
+  }
+}
+
 .logo-wrapper {
   display: inline-block;
   text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .logo-wrapper {
+    margin-bottom: 1rem;
+  }
 }
 
 .logo-who {
@@ -140,83 +222,96 @@ html {
 }
 
 .text {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
+@media (max-width: 768px) {
+  .text {
+    padding-top: 1.5rem;
+  }
+}
+
+/* Modern Add Info Section - STEM Academy & VEX Robotics */
 .add-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40rem;
-  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #f8f9fa;
 }
 
-.box {
-  width: 30rem;
-  height: 30rem;
-  border: 1px solid #ccc;
-  margin: 10px;
-  padding: 0;
-  text-align: center;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
+.info-card {
+  background: #ffffff;
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.box:hover {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: default;
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-.box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.card-image-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image {
   width: 100%;
   height: 100%;
   background-size: cover;
-  opacity: 0.6;
-  z-index: -1; /* Make sure the background image is behind the content */
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
 }
 
-#stem-academy {
-  background: url("./images/stem-academy/sa2.JPG") no-repeat center center /
-    cover;
-  background-size: cover;
+.info-card:hover .card-image {
+  transform: scale(1.05);
 }
 
-#vex-robotics {
-  background: url("./images/logos/vexlogo.png") no-repeat center center / cover;
-  background-size: cover;
+.card-content {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.box-content {
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
+.card-content h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
 }
 
-.box h2 {
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
   margin: 0;
-  padding: 10px;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  flex: 1;
 }
 
-.box p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 10px 0 0 0;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+.card-content a {
+  color: #EE7B19;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.card-content a:hover {
+  color: #da7217;
+  text-decoration: underline;
 }
 
 /* CAROUSEL CSS */
@@ -234,7 +329,33 @@ html {
 .bstrap {
   margin-left: 80.5px;
   margin-right: 80.5px;
-  padding: 48px 24px;
+  padding: 3rem 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .bstrap {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bstrap {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bstrap {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1.5rem 0.75rem;
+  }
 }
 
 .officer-title {
@@ -242,9 +363,9 @@ html {
   justify-content: center;
   text-align: center;
   font-weight: 700;
-  padding-bottom: 3rem;
+  padding: 4rem 2rem 2rem 2rem;
+  margin: 0;
   color: black;
-  padding-top: 3rem;
   font-size: 3rem;
 }
 
@@ -252,9 +373,30 @@ html {
 .grid-container {
   display: grid;
   grid-template-columns: 25rem 25rem 25rem;
-  gap: 30px 40px;
+  gap: 2rem 2.5rem;
   max-width: fit-content;
-  padding-bottom: 5rem;
+  padding: 2rem 1rem 4rem 1rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 20rem 20rem 20rem;
+    gap: 20px 30px;
+  }
+  .grid-item img {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 18rem 18rem;
+    gap: 20px;
+  }
+  .grid-item img {
+    width: 18rem;
+  }
 }
 
 .student-square-title {
@@ -262,60 +404,141 @@ html {
   justify-content: center;
   text-align: center;
   font-weight: 700;
-  padding-bottom: 3rem;
+  padding: 4rem 2rem 2rem 2rem;
+  margin: 0;
   color: black;
-  padding-top: 3rem;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .student-square-title {
+    font-size: 2rem;
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-square-title {
+    font-size: 1.5rem;
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+  }
 }
 
 .grid-section {
   display: flex;
   justify-content: center;
+  padding: 0 1rem;
+  margin: 0 0 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .grid-section {
+    padding: 0 0.5rem;
+  }
 }
 
 .grid-item img {
   width: 20rem;
   height: auto;
+  max-width: 100%;
 }
 
 .grid-item {
   width: fit-content;
 }
 
-/* Enhanced Add Info Section */
-.add-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding: 3rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+/* Responsive styles for Add Info Section */
+@media (max-width: 1024px) {
+  .add-info {
+    gap: 2rem;
+    padding: 4rem 1.5rem;
+  }
+  
+  .card-image-wrapper {
+    height: 220px;
+  }
+  
+  .card-content {
+    padding: 1.75rem;
+  }
+  
+  .card-content h2 {
+    font-size: 1.6rem;
+  }
 }
 
-.box {
-  background: linear-gradient(135deg, #ee7b19, #da7217);
-  border-radius: 12px;
-  color: white;
-  box-shadow: 0 8px 25px rgba(238, 123, 25, 0.3);
-  transition: transform 0.3s ease;
-  width: 100%;
-  box-sizing: border-box;
+@media (max-width: 768px) {
+  .add-info {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3.5rem 1.5rem;
+  }
+  
+  .card-image-wrapper {
+    height: 200px;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .card-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
 }
 
-.box:hover {
-  transform: translateY(-5px);
+@media (max-width: 480px) {
+  .add-info {
+    gap: 1.5rem;
+    padding: 2.5rem 1rem;
+  }
+  
+  .card-image-wrapper {
+    height: 180px;
+  }
+  
+  .card-content {
+    padding: 1.25rem;
+  }
+  
+  .card-content h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
 }
 
-.box h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.box-content p {
-  line-height: 1.6;
-  font-size: 1rem;
+@media (max-width: 360px) {
+  .add-info {
+    padding: 1.5rem 0.75rem;
+    gap: 1.25rem;
+  }
+  
+  .card-image-wrapper {
+    height: 160px;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-content h2 {
+    font-size: 1.2rem;
+  }
+  
+  .card-content p {
+    font-size: 0.85rem;
+  }
 }
 
 /* Enhanced Logo Section */
@@ -337,7 +560,27 @@ html {
   line-height: 1.7;
   color: #555;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 1.5rem auto 0 auto;
+  word-wrap: break-word;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .who-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    margin: 1rem auto 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .who-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 0.75rem;
+    margin: 0.75rem auto 0 auto;
+  }
 }
 
 .who-desc a {
@@ -374,6 +617,22 @@ html {
   color: #333;
   font-weight: 700;
 }
+
+@media (max-width: 768px) {
+  .officer-title {
+    font-size: 2rem !important;
+    margin-bottom: 2rem;
+    padding-top: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .officer-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem !important;
+  }
+}
 .short-desc {
   max-width: 40rem;
   font-size: 1.5rem;
@@ -385,12 +644,31 @@ html {
   width: 280px;
   display: flex;
   justify-content: center;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .col {
+    width: 100%;
+  }
 }
 
 .pics {
   object-fit: cover;
   width: 100%;
   height: 320px;
+}
+
+@media (max-width: 768px) {
+  .pics {
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pics {
+    height: 250px;
+  }
 }
 
 .card-body {
@@ -455,14 +733,6 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-  .h1-text {
-    font-size: 2.5rem;
-  }
-
-  .mini-msg {
-    font-size: 1.2rem;
-  }
-
   .carousel-item img {
     height: 300px;
   }
@@ -475,56 +745,50 @@ html {
     height: 280px;
   }
 
-  .bstrap {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 24px 12px;
-  }
-
   .grid-container {
-    grid-template-columns: 15rem 15rem;
-    gap: 10px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 15px;
+    padding-bottom: 3rem;
   }
-
-  .add-info {
-    grid-template-columns: 1fr;
-    padding: 2rem 1rem;
-  }
-
-  .student-square-title {
-    font-size: 2rem;
-    padding: 0 1rem;
+  
+  .grid-item img {
+    width: 100%;
+    max-width: 100%;
   }
 
   .who-desc {
     font-size: 1rem;
     padding: 0 1rem;
   }
+  
+  .who-desc a {
+    word-break: break-word;
+  }
 }
 
 @media (max-width: 480px) {
-  .h1-text {
-    padding-bottom: 2rem;
-    width: auto;
-    font-size: 2rem;
-  }
   .carousel-item img {
-    height: 300px;
-    width: 400px;
-  }
-  .box p {
-    font-size: 12px;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
   }
   .grid-container {
-    grid-template-columns: 10rem 10rem;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-bottom: 2rem;
   }
   .grid-item img {
-    width: 11rem;
+    width: 100%;
+    max-width: 100%;
   }
   .grid-section {
     align-items: center;
     justify-content: center;
+    padding: 0 0.5rem;
+  }
+  .who-desc {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -576,14 +840,15 @@ html {
 
 @media screen and (max-width: 490px) {
   p.lead.mb-4 {
-    font-size: 12px;
+    font-size: 0.9rem;
   }
   #hero {
-    max-height: 50vh;
+    min-height: 50vh;
+    max-height: 60vh;
   }
   .carousel-item img {
     height: 200px;
-    width: auto;
+    width: 100%;
     object-fit: cover;
   }
 }
@@ -593,15 +858,36 @@ html {
   width: 100%;
   max-width: 960px;
   padding-top: 30%; /* Maintains a 16:9 aspect ratio */
-  margin: 0 auto; /* Centers the slideshow horizontally */
+  margin: 3rem auto; /* Centers the slideshow horizontally */
   display: flex;
   justify-content: center;
   overflow: hidden;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1305px) {
   .googleslideshow {
     padding-top: 56.25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .googleslideshow {
+    padding-top: 56.25%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .googleslideshow {
+    padding-top: 56.25%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin: 1.5rem auto;
   }
 }
 
@@ -628,14 +914,22 @@ html {
 
 @media screen and (max-width: 390px) {
   .h1-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-top: 0px;
   }
   .hero-content {
     padding-top: 0;
   }
   p.lead.mb-4 {
-    font-size: 1rem;
+    font-size: 0.85rem;
+  }
+  .mini-msg {
+    font-size: 0.8rem;
+  }
+  .bstrap {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px 5px;
   }
 }
 

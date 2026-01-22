@@ -100,11 +100,13 @@
   .bstrap img {
     object-fit: cover;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    max-height: 350px;
+    aspect-ratio: 560 / 530;
+    max-width: 560px;
     object-position: center;
     border-radius: 5px;
     border: thick solid black;
+    display: block;
+    margin: 0 auto;
   }
 
 
@@ -118,30 +120,30 @@
 
   iframe, .bstrap img, .td-img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  max-height: 350px;
+  aspect-ratio: 560 / 530;
+  max-width: 560px;
 }
 
 @media screen and (max-width: 992px) {
   iframe, .bstrap img, .td-img {
-    aspect-ratio: 1 / 1;
-    max-height: 300px;
+    aspect-ratio: 560 / 530;
+    max-width: 450px;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
   iframe, .bstrap img, .td-img {
-    aspect-ratio: 1 / 1;
-    max-height: 280px;
+    aspect-ratio: 560 / 530;
+    max-width: 400px;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 580px) {
   iframe, .bstrap img, .td-img {
-    aspect-ratio: 1 / 1;
-    max-height: 250px;
+    aspect-ratio: 560 / 530;
+    max-width: 320px;
     width: 100%;
   }
   p.lead {

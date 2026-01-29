@@ -17,8 +17,9 @@ section#hero {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)),
-    url("../images/conferences/state/state1.jpg") no-repeat center center / cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.384)),
+    url("../images/officers/25-26officers1.webp") no-repeat center top / cover;
   padding: 4rem 2rem;
   margin: 0;
 }

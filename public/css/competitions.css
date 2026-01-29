@@ -19,8 +19,9 @@ section#hero {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/officers/24-25officers4.JPG") no-repeat center center / cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/officers/25-26officers1.webp") no-repeat center top / cover;
   padding: 4rem 2rem;
   margin: 0;
 }
@@ -263,7 +264,9 @@ iframe,
   border-radius: 10px;
   padding: 1.2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 2px solid transparent;
 }
 

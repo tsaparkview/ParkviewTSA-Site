@@ -653,6 +653,10 @@ html {
   }
 }
 
+img[src*="hare.webp"] {
+  filter: grayscale(100%);
+}
+
 .pics {
   object-fit: cover;
   width: 100%;

@@ -105,8 +105,8 @@
   .bstrap img {
     object-fit: cover;
     width: 100%;
-    aspect-ratio: 560 / 530;
-    max-width: 560px;
+    aspect-ratio: 6 / 4;
+    max-width: 600px;
     object-position: center;
     border-radius: 5px;
     border: thick solid black;
@@ -124,30 +124,30 @@
 
   iframe, .bstrap img, .td-img {
   width: 100%;
-  aspect-ratio: 560 / 530;
-  max-width: 560px;
+  aspect-ratio: 6 / 4;
+  max-width: 600px;
 }
 
 @media screen and (max-width: 992px) {
   iframe, .bstrap img, .td-img {
-    aspect-ratio: 560 / 530;
-    max-width: 450px;
+    aspect-ratio: 6 / 4;
+    max-width: 500px;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
   iframe, .bstrap img, .td-img {
-    aspect-ratio: 560 / 530;
-    max-width: 400px;
+    aspect-ratio: 6 / 4;
+    max-width: 450px;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 580px) {
   iframe, .bstrap img, .td-img {
-    aspect-ratio: 560 / 530;
-    max-width: 320px;
+    aspect-ratio: 6 / 4;
+    max-width: 350px;
     width: 100%;
   }
   p.lead {

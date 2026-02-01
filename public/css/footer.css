@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* #10182B for the black, #EE7B19 for the orange, and white*/
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex; /* Add this to create a flex container */
+  flex-direction: column; /* Stack elements vertically */
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+.footer {
+  margin-top: auto; /* Push the footer to the bottom of the page */
+  background: #10182B;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+  .social-icon,
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.75rem 0;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  @media (max-width: 480px) {
+    .social-icon,
+    .menu {
+      margin: 0.5rem 0;
+      gap: 0.25rem;
+    }
+  }
+
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 0.5rem;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  @media (max-width: 480px) {
+    .social-icon__link {
+      font-size: 1.75rem;
+      margin: 0 0.25rem;
+    }
+  }
+.social-icon__link:hover {
+  transform: translateY(-10px);
+  color:#EE7B19;
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 0.75rem;
+    display: block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  @media (max-width: 768px) {
+    .menu__link {
+      font-size: 1.1rem;
+      margin: 0 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu__link {
+      font-size: 1rem;
+      margin: 0 0.4rem;
+    }
+  }
+
+.menu__link:hover {
+  opacity: 1;
+  color: #EE7B19;
+}
+
+.footer p {
+  color: #fff;
+  margin: 1rem 0 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media (max-width: 480px) {
+  .footer p {
+    font-size: 0.9rem;
+    margin: 0.75rem 0 0.5rem 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

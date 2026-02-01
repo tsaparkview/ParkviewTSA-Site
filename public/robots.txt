@@ -1,0 +1,6 @@
+# robots.txt for https://parkviewtsa.org/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://parkviewtsa.org/sitemap.xml

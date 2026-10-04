@@ -20,8 +20,8 @@ section#hero {
   justify-content: center;
   text-align: center;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/officers/26-27officers2.webp") no-repeat center top / cover;
+    linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.75) 100%),
+    url("../images/officers/26-27officers2.webp") no-repeat center 35% / cover;
   padding: 4rem 2rem;
   margin: 0;
 }

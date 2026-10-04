@@ -130,7 +130,7 @@ html {
 /* Enhanced Hero Section */
 #hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/conferences/state/state4.jpg") no-repeat center bottom / cover;
+    url("../images/conferences/state/state4.jpg") no-repeat center 10% / cover;
   /* BANNER PICTURE*/
   min-height: 80vh;
   display: flex;
